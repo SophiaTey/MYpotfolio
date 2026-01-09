@@ -113,20 +113,18 @@ h5 {
     transform: rotate(-45deg);
 }
 
-/* Обновленное мобильное меню */
 .mobile-menu {
     position: fixed;
     top: 0;
     right: 0;
-    /* Ширина на пол-экрана */
+
     width: 50%; 
     height: 100vh;
-    
-    /* Полупрозрачный черный фон */
+
     background: rgba(0, 0, 0, 0.7); 
-    /* Эффект матового стекла (размытие фона сайта) */
+
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Для поддержки в Safari */
+    -webkit-backdrop-filter: blur(10px); 
     
     display: flex;
     flex-direction: column;
@@ -138,12 +136,10 @@ h5 {
     transform: translateX(100%); 
     transition: transform 0.4s ease-in-out;
     z-index: 1000;
-    
-    /* Чтобы текст не прилипал к краям на очень узких экранах */
+
     padding: 20px;
 }
 
-/* Состояние при открытии */
 .mobile-menu.active {
     transform: translateX(0);
 }
@@ -490,4 +486,5 @@ h5 {
     width: 70%; /* Фото на всю ширину экрана */
   }
 }
+
 
