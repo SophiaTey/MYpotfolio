@@ -75,57 +75,78 @@ h5 {
   font-weight: 600;
 }
 
-/* БУРГЕР */
+/* Стили для бургера */
 .burger {
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 1100;
+    display: none; /* По умолчанию скрыт на десктопе */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1100;
 }
 
 .burger span {
-  width: 26px;
-  height: 3px;
-  background: white;
-  border-radius: 2px;
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px; /* Важно для красивого вращения */
 }
 
+/* Анимация в крестик */
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+/* Обновленное мобильное меню */
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 280px;
-  height: 100vh;
-  background: rgba(20, 20, 20, 0.95);
-  backdrop-filter: blur(8px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-  transform: translateX(100%);
-  transition: transform 0.4s ease;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* Ширина на пол-экрана */
+    width: 50%; 
+    height: 100vh;
+    
+    /* Полупрозрачный черный фон */
+    background: rgba(0, 0, 0, 0.7); 
+    /* Эффект матового стекла (размытие фона сайта) */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Для поддержки в Safari */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    
+    /* Выезд справа налево */
+    transform: translateX(100%); 
+    transition: transform 0.4s ease-in-out;
+    z-index: 1000;
+    
+    /* Чтобы текст не прилипал к краям на очень узких экранах */
+    padding: 20px;
 }
 
+/* Состояние при открытии */
 .mobile-menu.active {
-  transform: translateX(0);
+    transform: translateX(0);
 }
-
-.close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 28px;
-  cursor: pointer;
-}
-
 /* MAIN SECTION */
 .description {
   margin-top: 90px;
@@ -469,3 +490,4 @@ h5 {
     width: 70%; /* Фото на всю ширину экрана */
   }
 }
+
