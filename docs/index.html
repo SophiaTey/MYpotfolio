@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia Naghieva's portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="start" id="start">
+        <div class="container">
+
+            <div class="navbar">
+                <div class="pox">
+                    <h3 class="pox_name">Sofia Naghieva's portfolio</h3>
+
+                    <!-- бургер -->
+                    <button class="burger" id="burger" aria-label="Открыть меню" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <nav class="nav-links">
+                        <a href="#skills" class="links">Tools</a>
+                        <a href="https://sophiatey.github.io/My-Projects/" class="links" target="_blank">Works</a>
+                        <a href="#about" class="links">About me</a>
+                        <a href="#contacts" class="links">Contacts</a>
+                    </nav>
+
+                    <nav class="mobile-menu" id="nav-menu" aria-hidden="true">
+                        <button class="close" id="close" aria-label="Закрыть меню">✕</button>
+
+                        <a href="#skills" class="links">Tools</a>
+                        <a href="https://sophiatey.github.io/My-Projects/" class="links" target="_blank">Works</a>
+                        <a href="#about" class="links">About me</a>
+                        <a href="#contacts" class="links">Contacts</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="description">
+                <h3 class="about_me">Hi, I’m a web developer. I create modern, fast, and beautiful websites</h3>
+                <a href="https://sophiatey.github.io/My-Projects/" target="_blank"><button
+                        class="btn">Projects</button></a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="title">Tools</h2>
+            <div class="wrapper">
+                <div class="card">
+                    <h3>HTML5</h3>
+                    <p>Semantic and accessible layouts</p>
+                    <img src="img/html.png" alt="html" class="skills-img">
+                </div>
+
+                <div class="card">
+                    <h3>CSS3</h3>
+                    <p>Clean, responsive visual design</p>
+                    <img src="img/text.png" alt="css" class="skills-img">
+                </div>
+
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Interactive and dynamic behavior</p>
+                    <img src="img/javascript-seeklogo.com.svg" alt="js" class="skills-img">
+                </div>
+
+                <div class="card">
+                    <h3>React</h3>
+                    <p>Component-based modern interfaces</p>
+                    <img src="img/React-icon.svg.png" alt="react" class="skills-img">
+                </div>
+
+                <div class="card">
+                    <h3>Figma</h3>
+                    <p>Website layouts and prototypes</p>
+                    <img src="img/figma.png" alt="figma" class="skills-img">
+                </div>
+
+                <div class="card">
+                    <h3>Bootstrap</h3>
+                    <p>Fast and responsive layouts</p>
+                    <img src="img/media.png" alt="bootstrap" class="skills-img">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="title">About me</h2>
+            <div class="about-inf">
+
+                <div class="about_text">
+                    <h3 class="about_title">My name is Sofia</h3>
+                    <h3 class="about_short">•I am a beginner developer from Baku</h3>
+                    <p class="about-par">I am a junior web developer based in Baku. <br>
+                        I have completed web development courses and continue to improve my skills with modern
+                        technologies. <br>
+                        I create responsive websites that work smoothly on all devices and add interactivity using
+                        JavaScript. <br>
+                        I work with animations, forms, sliders, and small web applications such as weather apps and
+                        photo galleries. <br>
+                        Currently, I am looking for opportunities to grow in real projects and contribute to a team.
+                    <h2 class="country">Azerbaijan</h2>
+                    </p>
+
+                    <h4>Languages: Русский, English, Azərbaycan dili</h4>
+                </div>
+                <img src="img/me.jpeg" alt="Me" class="me">
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="title">Contacts</h2>
+
+            <div class="message">
+
+                <h3>my email: <span class="span">sophiatey11@gmail.com</span></h3>
+                <a href="#start"><button class="btn-upp">↑</button></a>
+
+                <div class="message_links">
+                    <a href="https://t.me/sofiNagh" class="message-link" target="_blank" style="--color: #325fe9;">
+                        <i class="fa-brands fa-telegram fa-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sophia__tey/" class="message-link" target="_blank"
+                        style="--color: #f11260;">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </a>
+                    <a href="https://wa.me/994703551112" class="message-link" target="_blank" style="--color: #09c846;">
+                        <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/537d135c77.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
