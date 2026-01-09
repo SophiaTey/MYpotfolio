@@ -1,21 +1,16 @@
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav-menu');
-const close = document.getElementById('close');
-const mobileLinks = document.querySelectorAll('.mobile-link');
+const links = document.querySelectorAll('.mobile-menu .links');
 
-// Открыть меню
 burger.addEventListener('click', () => {
-  nav.classList.add('active');
+  burger.classList.toggle('active');
+  nav.classList.toggle('active');
 });
 
-// Закрыть меню через кнопку Х
-close.addEventListener('click', () => {
-  nav.classList.remove('active');
-});
-
-// Закрыть меню при клике на любую ссылку
-mobileLinks.forEach((link) => {
+// Закрываем при клике на ссылку
+links.forEach((link) => {
   link.addEventListener('click', () => {
+    burger.classList.remove('active');
     nav.classList.remove('active');
   });
 });
